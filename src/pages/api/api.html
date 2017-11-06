@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      世界各地天氣
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>請輸入經緯度</h1>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>經度</ion-label>
+      <ion-input type="text" name="input1" [(ngModel)]="data.input1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>緯度</ion-label>
+      <ion-input type="text" name="input2" [(ngModel)]="data.input2"></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)="submit()">搜尋</button>
+  </ion-list>
+
+</ion-content>

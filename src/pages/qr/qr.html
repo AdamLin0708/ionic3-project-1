@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar transparent>
+    <ion-title>
+      QR Code
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+      <ion-card-header>
+          QR Code掃描
+      </ion-card-header>
+      <ion-card-content>
+          <button ion-button full icon-left (click)="scanCode()" color="secondary"><ion-icon name="qr-scanner"></ion-icon>Scan</button>
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <ion-card-header>
+          輸入網址並開啟網頁
+      </ion-card-header>
+      <ion-card-content>
+          <ion-item>
+              <ion-label floating>點選並輸入網址</ion-label>
+              <ion-input type="text" name="input" [(ngModel)]="data.input"></ion-input>
+          </ion-item>
+          <button ion-button full icon-left (click)="openUrl()" color="primary"><ion-icon name="open"></ion-icon>開啟</button>
+      </ion-card-content>
+  </ion-card>
+</ion-content>
